@@ -16,4 +16,12 @@ public class Turma {
         TelaCadastroAluno telaCadastroAluno = new TelaCadastroAluno(numeroAlunos);
         alunos = telaCadastroAluno.cadastrarAlunos();
     }
+    public void ImprimirHistoricoDaTurma(){
+        System.out.println("Histórico da turma :" + this.nome);
+        System.out.println("-----------------------");
+        for (int i = 0; i < numeroAlunos; i++) {
+            alunos[i].ImprimirTodosDados();
+            //System.out.println("-----------------------");
+        }
+    }
 }

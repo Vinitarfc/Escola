@@ -15,6 +15,7 @@ public class App
         TelaCadastroTurma telaCadastroTurma = new TelaCadastroTurma();
         Turma turma = telaCadastroTurma.cadastrarTurma();
         turma.CadastrarAlunos();
+        turma.ImprimirHistoricoDaTurma();
     }
 
 }

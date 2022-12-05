@@ -42,4 +42,12 @@ public class Aluno {
         this.nota.setPrimeiraNota(primeiraNota);
         this.nota.setSegundaNota(segundaNota);
     }
+
+    public void ImprimirTodosDados(){
+        System.out.println("Nome " + this.nome);
+        System.out.println("Matricula " + this.matricula);
+        System.out.println("Idade " + this.idade);
+        System.out.println("Nota 1: " + this.nota.primeiraNota);
+        System.out.println("Nota 2: " + this.nota.segundaNota);
+    }
 }
